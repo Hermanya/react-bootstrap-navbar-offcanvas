@@ -3,7 +3,7 @@ React Bootstrap Off-canvas Navigation
 
 ![React Bootstrap Off-canvas Navigation demo](https://media.giphy.com/media/3o6fJgIj5Mb3b2hoBO/giphy.gif)
 
-**[Demo](https://hermanya.github.io/react-bootstrap-navbar-offcanvas/build/)** | [![Build Status](https://travis-ci.org/Hermanya/awesome-react-bootstrap-components.svg?branch=master)](https://travis-ci.org/Hermanya/awesome-react-bootstrap-components) | `npm install react-bootstrap-navbar-offcanvas`
+**[Demo](https://hermanya.github.io/react-bootstrap-navbar-offcanvas/build/)** | [![Build Status](https://travis-ci.org/Hermanya/react-bootstrap-navbar-offcanvas.svg?branch=master)](https://travis-ci.org/Hermanya/react-bootstrap-navbar-offcanvas) | `npm install react-bootstrap-navbar-offcanvas`
 
 or install with yarn:
 `yarn add react-bootstrap-navbar-offcanvas`

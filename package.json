@@ -2,7 +2,7 @@
   "name": "react-bootstrap-offcanvas",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hermanya.github.io/react-bootstrap-navbar-offcanvas",
+  "homepage": "https://hermanya.github.io/react-bootstrap-navbar-offcanvas/build",
   "main": "src/NavbarOffcanvas.js",
   "dependencies": {
     "react": "^16.2.0",

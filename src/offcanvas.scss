@@ -1,0 +1,49 @@
+@import 'vars';
+
+@media (max-width: $offcanvas-media) {
+  .navbar-offcanvas {
+    min-height: calc(100vh - 50px);
+    opacity: 0;
+    padding-left: $navbar-padding-horizontal;
+    padding-right: $navbar-padding-horizontal;
+    position: absolute;
+    transition: $offcanvas-animation-time ease;
+    z-index: 999;
+  }
+
+  .navbar-default {
+    .navbar-offcanvas {
+      background-color: $navbar-default-bg;
+    }
+
+    .navbar-offcanvas-right {
+      border-left: 1px solid $navbar-default-border;
+    }
+
+    .navbar-offcanvas-left {
+      border-right: 1px solid $navbar-default-border;
+    }
+  }
+
+  .navbar-offcanvas-left {
+    left: -100%;
+  }
+
+  .navbar-offcanvas-right {
+    right: -100px;
+  }
+
+  .navbar-inverse {
+    .navbar-offcanvas {
+      background-color: $navbar-inverse-bg;
+    }
+
+    .navbar-offcanvas-right {
+      border-left: 1px solid $navbar-inverse-border;
+    }
+
+    .navbar-offcanvas-left {
+      border-right: 1px solid $navbar-inverse-border;
+    }
+  }
+}

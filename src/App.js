@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import {Navbar, Nav, NavItem, MenuItem, NavDropdown} from 'react-bootstrap'
+import React, { Component } from 'react'
+import { Navbar, Nav, NavItem, MenuItem, NavDropdown, FormGroup, Button, FormControl } from 'react-bootstrap'
 import NavbarOffcanvas from './NavbarOffcanvas'
-import './App.css'
+import './offcanvas.css'
+
 class App extends Component {
   render() {
     return (
@@ -13,7 +14,7 @@ class App extends Component {
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
-          <NavbarOffcanvas>
+          <NavbarOffcanvas side="left">
             <Nav>
               <NavItem eventKey={1} href="#">Link</NavItem>
               <NavItem eventKey={2} href="#">Link</NavItem>
@@ -25,18 +26,21 @@ class App extends Component {
                 <MenuItem eventKey={3.3}>Separated link</MenuItem>
               </NavDropdown>
             </Nav>
-            <Nav pullRight>
-              <NavItem eventKey={1} href="#">Link Right</NavItem>
-              <NavItem eventKey={2} href="#">Link Right</NavItem>
-            </Nav>
+            <Navbar.Form pullRight>
+              <FormGroup>
+                <FormControl type="text" placeholder="Search" />
+              </FormGroup>
+              {' '}
+              <Button type="submit" bsStyle="success">Submit</Button>
+            </Navbar.Form>
           </NavbarOffcanvas>
         </Navbar>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

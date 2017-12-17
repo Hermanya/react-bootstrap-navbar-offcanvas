@@ -1,0 +1,12 @@
+// Bootstrap vars
+$screen-xs-max:                   767px !default;
+$navbar-padding-vertical:         10px !default;
+$navbar-padding-horizontal:       15px !default;
+$navbar-default-bg:               #f8f8f8 !default;
+$navbar-inverse-bg:               #222 !default;
+$navbar-default-border:           darken($navbar-default-bg, 6.5%);
+$navbar-inverse-border:           darken($navbar-inverse-bg, 6.5%);
+
+// Offcanvas vars
+$offcanvas-animation-time:        .5s !default;
+$offcanvas-media:                 $screen-xs-max !default;

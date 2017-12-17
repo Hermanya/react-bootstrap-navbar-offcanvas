@@ -1,22 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import Offcanvas from './Offcanvas.js';
-import { prefix } from 'react-bootstrap/lib/utils/bootstrapUtils';
+import Offcanvas from './Offcanvas.js'
+import { prefix } from 'react-bootstrap/lib/utils/bootstrapUtils'
 
 const contextTypes = {
   $bs_navbar: PropTypes.shape({
     bsClass: PropTypes.string,
     expanded: PropTypes.bool,
   }),
-};
+}
 
 class NavbarOffcanvas extends React.Component {
   render() {
-    const { children, ...props } = this.props;
-    const navbarProps = this.context.$bs_navbar || { bsClass: 'navbar' };
+    const { children, ...props } = this.props
+    const navbarProps = this.context.$bs_navbar || { bsClass: 'navbar' }
 
-    const bsClassName = prefix(navbarProps, 'collapse');
+    const bsClassName = prefix(navbarProps, 'offcanvas')
 
     return (
       <Offcanvas in={navbarProps.expanded} {...props}>
@@ -24,10 +24,10 @@ class NavbarOffcanvas extends React.Component {
           {children}
         </div>
       </Offcanvas>
-    );
+    )
   }
 }
 
-NavbarOffcanvas.contextTypes = contextTypes;
+NavbarOffcanvas.contextTypes = contextTypes
 
-export default NavbarOffcanvas;
+export default NavbarOffcanvas

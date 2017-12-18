@@ -22,8 +22,7 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-bootstrap": "^0.31.5",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "eslint": "^4.3.0",
@@ -31,7 +30,8 @@
     "eslint-parallel": "^0.3.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-react": "^7.1.0",
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",

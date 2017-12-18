@@ -3,8 +3,8 @@
   "description": "Off-canvas navigation for react using bootstrap",
   "version": "1.0.1",
   "homepage": "https://hermanya.github.io/react-bootstrap-navbar-offcanvas/build",
-  "main": "src/NavbarOffcanvas.js",
-  "jsnext:main": "src/NavbarOffcanvas.js",
+  "main": "lib/navbar-offcanvas.js",
+  "jsnext:main": "src/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "bootstrap"
   ],
   "dependencies": {
+    "codecov": "^3.0.0",
     "react": "^16.2.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.2.0"
@@ -31,14 +32,15 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.1.0",
+    "node-sass-chokidar": "0.0.3",
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "build-css": "node-sass-chokidar src/ -o public/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o public/ --watch --recursive",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "build": "react-scripts build && ./after-build.sh",
+    "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject"
   }
 }

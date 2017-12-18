@@ -21,6 +21,7 @@
     -->
     <title>React App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/offcanvas.css">
   </head>
   <body>
     <noscript>
@@ -37,5 +38,53 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-bootstrap@latest/dist/react-bootstrap.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/babel">
+      const { Navbar, Nav, NavItem, MenuItem, NavDropdown, FormGroup, Button, FormControl } = ReactBootstrap
+      const NavbarOffcanvas = ReactBootstrapNavbarOffcanvas
+      class App extends React.Component {
+        render() {
+          return (
+            <div className="App">
+            <Navbar collapseOnSelect staticTop>
+              <Navbar.Header>
+                <Navbar.Brand>
+                  <a href="#">React-Bootstrap</a>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+              </Navbar.Header>
+              <NavbarOffcanvas side="left">
+                <Nav>
+                  <NavItem eventKey={1} href="#">Link</NavItem>
+                  <NavItem eventKey={2} href="#">Link</NavItem>
+                  <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                    <MenuItem eventKey={3.1}>Action</MenuItem>
+                    <MenuItem eventKey={3.2}>Another action</MenuItem>
+                    <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                  </NavDropdown>
+                </Nav>
+                <Navbar.Form pullRight>
+                  <FormGroup>
+                    <FormControl type="text" placeholder="Search" />
+                  </FormGroup>
+                  {' '}
+                  <Button type="submit" bsStyle="success">Submit</Button>
+                </Navbar.Form>
+              </NavbarOffcanvas>
+            </Navbar>
+              <p className="App-intro">
+                To get started, edit <code>src/App.js</code> and save to reload.
+              </p>
+            </div>
+          )
+        }
+      }
+      ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
   </body>
 </html>

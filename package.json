@@ -1,7 +1,7 @@
 {
   "name": "react-bootstrap-navbar-offcanvas",
   "description": "Off-canvas navigation for react using bootstrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://hermanya.github.io/react-bootstrap-navbar-offcanvas/build",
   "main": "src/NavbarOffcanvas.js",
   "jsnext:main": "src/NavbarOffcanvas.js",

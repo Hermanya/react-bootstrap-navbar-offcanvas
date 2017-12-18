@@ -12,3 +12,4 @@ cache: yarn
 branches:
   only:
     - master
+    - /^greenkeeper/.*$/

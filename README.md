@@ -4,6 +4,7 @@ React Bootstrap Off-canvas Navigation
 [![Build Status](https://travis-ci.org/Hermanya/react-bootstrap-navbar-offcanvas.svg?branch=master)](https://travis-ci.org/Hermanya/react-bootstrap-navbar-offcanvas)
 [![codecov](https://codecov.io/gh/Hermanya/react-bootstrap-navbar-offcanvas/branch/master/graph/badge.svg)](https://codecov.io/gh/Hermanya/react-bootstrap-navbar-offcanvas)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Hermanya/react-bootstrap-navbar-offcanvas.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/react-bootstrap-navbar-offcanvas.svg)](https://badge.fury.io/js/react-bootstrap-navbar-offcanvas)
 
 ![React Bootstrap Off-canvas Navigation demo](https://media.giphy.com/media/3o6fJgIj5Mb3b2hoBO/giphy.gif)
 

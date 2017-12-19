@@ -33,7 +33,3 @@ class NavbarOffcanvas extends React.Component {
 NavbarOffcanvas.contextTypes = contextTypes
 
 export default NavbarOffcanvas
-
-if (typeof window !== 'undefined') {
-  window.ReactBootstrapNavbarOffcanvas = NavbarOffcanvas
-}

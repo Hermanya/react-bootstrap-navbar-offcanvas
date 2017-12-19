@@ -5,8 +5,10 @@
     padding-left: 15px;
     padding-right: 15px;
     position: absolute;
-    transition: 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
     z-index: 999; }
+    .navbar-offcanvas.in {
+      opacity: 1; }
   .navbar-default .navbar-offcanvas {
     background-color: #f8f8f8; }
   .navbar-default .navbar-offcanvas-right {
@@ -14,9 +16,15 @@
   .navbar-default .navbar-offcanvas-left {
     border-right: 1px solid #e7e7e7; }
   .navbar-offcanvas-left {
-    left: -100%; }
+    left: 0;
+    transform: translateX(-100%); }
+    .navbar-offcanvas-left.in {
+      transform: translateX(0); }
   .navbar-offcanvas-right {
-    right: -100px; }
+    right: 0;
+    transform: translateX(100%); }
+    .navbar-offcanvas-right.in {
+      transform: translateX(0); }
   .navbar-inverse .navbar-offcanvas {
     background-color: #222; }
   .navbar-inverse .navbar-offcanvas-right {

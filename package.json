@@ -70,8 +70,8 @@
     "node-sass-chokidar": "0.0.3"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o public/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o public/ --watch --recursive",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js && ./after-build.sh",
     "test": "node scripts/test.js --env=jsdom --coverage",

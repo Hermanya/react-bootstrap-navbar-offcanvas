@@ -1,5 +1,6 @@
 @import 'vars';
 
+
 @media (max-width: $offcanvas-media) {
   .navbar-offcanvas {
     min-height: calc(100vh - 50px);
@@ -7,8 +8,13 @@
     padding-left: $navbar-padding-horizontal;
     padding-right: $navbar-padding-horizontal;
     position: absolute;
-    transition: $offcanvas-animation-time ease;
+    transition: transform $offcanvas-animation-time ease,
+    opacity $offcanvas-animation-time ease;
     z-index: 999;
+
+    &.in {
+      opacity: 1;
+    }
   }
 
   .navbar-default {
@@ -26,11 +32,21 @@
   }
 
   .navbar-offcanvas-left {
-    left: -100%;
+    left: 0;
+    transform: translateX(-100%);
+
+    &.in {
+      transform: translateX(0);
+    }
   }
 
   .navbar-offcanvas-right {
-    right: -100px;
+    right: 0;
+    transform: translateX(100%);
+
+    &.in {
+      transform: translateX(0);
+    }
   }
 
   .navbar-inverse {

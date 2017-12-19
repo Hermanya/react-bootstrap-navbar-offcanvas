@@ -44,16 +44,12 @@ class Collapse extends React.Component {
       : this.props.side
   }
 
-  /* -- Expanding -- */
   handleEnter(elem) {
-    elem.style[this._side()] = '0'
-    elem.style.opacity = 1
+    elem.classList.add('in')
   }
 
-  /* -- Collapsing -- */
   handleExit(elem) {
-    elem.style[this._side()] = '-100px'
-    elem.style.opacity = 0
+    elem.classList.remove('in')
   }
 
   render() {
@@ -70,7 +66,7 @@ class Collapse extends React.Component {
 
     const classes = {
       'navbar-offcanvas-left': this._side() === 'left',
-      'navbar-offcanvas-right': this._side() === 'right',
+      'navbar-offcanvas-right': this._side() === 'right'
     }
 
     return (

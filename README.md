@@ -11,6 +11,4 @@ React Bootstrap Off-canvas Navigation
 
 [Inspiration](https://getbootstrap.com/docs/4.0/examples/offcanvas/)
 
-[Add sass to create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)
-
 [Awesome React Bootstrap components](https://github.com/Hermanya/awesome-react-bootstrap-components)

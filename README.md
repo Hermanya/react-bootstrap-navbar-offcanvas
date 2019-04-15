@@ -14,6 +14,8 @@ React Bootstrap Off-canvas Navigation
 
 [Awesome React Bootstrap components](https://github.com/Hermanya/awesome-react-bootstrap-components)
 
+## Currently only works with Bootstrap 3
+
 ## Usage
 ```jsx
 import NavbarOffcanvas from 'react-bootstrap-navbar-offcanvas'
